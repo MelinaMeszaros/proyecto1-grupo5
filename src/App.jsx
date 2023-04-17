@@ -1,11 +1,12 @@
 
 import './App.css'
+import IntegrantesVista from './IntegrantesVista';
 
 const App = () => {
   return (
     <>
-    <h1>Grupo 5</h1>
-    <h2>Primer Proyecto</h2>
+    <h1>Primer Proyecto</h1>
+    < IntegrantesVista />
     </>
   );
 };
