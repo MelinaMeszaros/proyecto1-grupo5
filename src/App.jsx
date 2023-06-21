@@ -1,12 +1,19 @@
 
 import './App.css'
-import IntegrantesVista from './IntegrantesVista';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import IntegrantesVista from './Vistas/IntegrantesVista';
+import ToDoList from './Vistas/ToDoList';
 
 const App = () => {
   return (
     <>
-    <h1>Primer Proyecto</h1>
-    < IntegrantesVista />
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={< IntegrantesVista />} />
+          <Route path='/proyecto' element={< ToDoList />} />
+      </Routes>
+    </BrowserRouter>
+    
     </>
   );
 };
